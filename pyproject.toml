@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "creativeai"
+version = "0.1.0"
+description = ""
+authors = ["Miguel Vieira <jmvieira@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = {extras = ["pytorch"], version = "^4.22.2"}
+torch = "^1.12.1"
+accelerate = "^0.13.0"
+txtai = "^5.0.0"
+happytransformer = "^2.4.1"
+ipywidgets = "^8.0.2"
+diffusers = "^0.9.0"
+huggingface-hub = "^0.10.1"
+spacy = "^3.4.2"
+gradio = "^3.9"
+ftfy = "^6.1.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.5.0"
+black = "^22.10.0"
+jupyterlab = "^3.5.0"
+jupyterlab-code-formatter = "^1.5.3"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
